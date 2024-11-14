@@ -1,4 +1,9 @@
 # WEB Работы:
+-Лабораторная 1 (HTML / CSS)
+
+-Лабораторная 2 (HTML / CSS)
+
+-Лабораторная 3 (HTML / CSS)
 
 -Лабораторная 4 ([HTML](https://github.com/Kemegggg/New-Web/blob/main/index.html) / [CSS](https://github.com/Kemegggg/New-Web/blob/main/style.css))
 
