@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Translation Blocks</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="langs.css">
+</head>
+<body>
+  <h1>Трудности перевода</h1>
+
+  <p lang="ru">Привет, мир!</p>
+  <p lang="en">Hello, world!</p>
+  <p lang="de">Hallo, Welt!</p>
+  <p lang="fi">Hei, maailma!</p>
+  <p lang="fr">Bonjour, le monde!</p>
+  <script>
+    function showTime() {
+	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+}
+showTime();
+setInterval(function () {
+	showTime();
+}, 1000);
+  </script>
+</body>
+</html>

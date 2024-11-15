@@ -1,0 +1,37 @@
+p {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Russian */
+  p[lang="ru"] {
+    background-color: #90ee90; /* Light green */
+    color: black;
+  }
+  
+  /* English */
+  p[lang="en"] {
+    background-color: #ff4500; /* Orange-Red */
+    color: white;
+  }
+  
+  /* German */
+  p[lang="de"] {
+    background-color: #1e90ff; /* Dodger Blue */
+    color: white;
+  }
+  
+  /* Finnish */
+  p[lang="fi"] {
+    background-color: #ee82ee; /* Violet */
+    color: white;
+  }
+  
+  /* French */
+  p[lang="fr"] {
+    background-color: #ffa500; /* Orange */
+    color: black;
+  }
