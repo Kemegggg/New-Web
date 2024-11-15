@@ -1,9 +1,9 @@
 # JAVA Работы:
--Лабораторная 1 (code)
+-Лабораторная 1 ([code](https://github.com/Kemegggg/New-Web/blob/main/lab_n1.js))
 
--Лабораторная 2 (code)
+-Лабораторная 2 ([code](https://github.com/Kemegggg/New-Web/blob/main/lab2_ppv.js))
 
--Лабораторная 3 (code)
+-Лабораторная 3 ([code](https://github.com/Kemegggg/New-Web/blob/main/lab3_ppv.js))
 
 # WEB Работы:
 -Лабораторная 1 (HTML / CSS)
