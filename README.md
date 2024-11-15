@@ -6,12 +6,12 @@
 -Лабораторная 3 ([code](https://github.com/Kemegggg/New-Web/blob/main/lab3_ppv.js))
 
 # WEB Работы:
-## -Лабораторная 1 
--1 Пункт-(HTML / CSS)
+-Лабораторная 1 
+-1 Пункт-(HTML / CSS / LANGS)
 
--2 Пункт-(HTML / CSS)
+-2 Пункт-(HTML / CSS / LANGS)
 
--3 Пункт-(HTML / CSS)
+-3 Пункт-(HTML / CSS / LANGS)
 
 -Лабораторная 2 (HTML / CSS)
 
