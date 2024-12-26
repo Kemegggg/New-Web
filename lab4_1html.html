@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор калорий</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: ##FFFFE0;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        select, input, button {
+            padding: 10px;
+            font-size: 1rem;
+            width: 100%;
+            max-width: 300px;
+            border: 2px solid #ff9999;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff9999;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff4d4d;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #990000;
+        }
+        .product-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Калькулятор калорий</h1>
+
+    <div class="product-group">
+        <div class="form-group">
+            <label for="product1">Выберите продукт 1:</label>
+            <select id="product1">
+                <option value="">Не выбрано</option>
+                <option value="52">Яблоко (52 ккал/100г)</option>
+                <option value="265">Хлеб (265 ккал/100г)</option>
+                <option value="47">Морковь (47 ккал/100г)</option>
+                <option value="89">Банан (89 ккал/100г)</option>
+                <option value="33">Огурец (33 ккал/100г)</option>
+                <option value="18">Помидор (18 ккал/100г)</option>
+                <option value="150">Куриное филе (150 ккал/100г)</option>
+                <option value="200">Сыр (200 ккал/100г)</option>
+                <option value="310">Шоколад (310 ккал/100г)</option>
+                <option value="50">Йогурт (50 ккал/100г)</option>
+            </select>
+            <input type="number" id="quantity1" placeholder="Граммы" class="quantity-input">
+        </div>
+
+        <div class="form-group">
+            <label for="product2">Выберите продукт 2:</label>
+            <select id="product2">
+                <option value="">Не выбрано</option>
+                <option value="52">Яблоко (52 ккал/100г)</option>
+                <option value="265">Хлеб (265 ккал/100г)</option>
+                <option value="47">Морковь (47 ккал/100г)</option>
+                <option value="89">Банан (89 ккал/100г)</option>
+                <option value="33">Огурец (33 ккал/100г)</option>
+                <option value="18">Помидор (18 ккал/100г)</option>
+                <option value="150">Куриное филе (150 ккал/100г)</option>
+                <option value="200">Сыр (200 ккал/100г)</option>
+                <option value="310">Шоколад (310 ккал/100г)</option>
+                <option value="50">Йогурт (50 ккал/100г)</option>
+            </select>
+            <input type="number" id="quantity2" placeholder="Граммы" class="quantity-input">
+        </div>
+
+        <div class="form-group">
+            <label for="product3">Выберите продукт 3:</label>
+            <select id="product3">
+                <option value="">Не выбрано</option>
+                <option value="52">Яблоко (52 ккал/100г)</option>
+                <option value="265">Хлеб (265 ккал/100г)</option>
+                <option value="47">Морковь (47 ккал/100г)</option>
+                <option value="89">Банан (89 ккал/100г)</option>
+                <option value="33">Огурец (33 ккал/100г)</option>
+                <option value="18">Помидор (18 ккал/100г)</option>
+                <option value="150">Куриное филе (150 ккал/100г)</option>
+                <option value="200">Сыр (200 ккал/100г)</option>
+                <option value="310">Шоколад (310 ккал/100г)</option>
+                <option value="50">Йогурт (50 ккал/100г)</option>
+            </select>
+            <input type="number" id="quantity3" placeholder="Граммы" class="quantity-input">
+        </div>
+    </div>
+
+    <button id="calculate">Рассчитать калории</button>
+
+    <div id="result">Калории: 0</div>
+
+    <script>
+        const calculateButton = document.getElementById('calculate');
+        const resultDiv = document.getElementById('result');
+
+        function calculateCalories() {
+            let totalCalories = 0;
+
+            for (let i = 1; i <= 3; i++) {
+                const product = document.getElementById(`product${i}`);
+                const quantity = document.getElementById(`quantity${i}`);
+
+                const caloriePer100g = parseFloat(product.value);
+                const quantityValue = parseFloat(quantity.value);
+
+                if (!isNaN(caloriePer100g) && !isNaN(quantityValue) && quantityValue > 0) {
+                    totalCalories += (caloriePer100g * quantityValue) / 100;
+                }
+            }
+
+            resultDiv.textContent = `Калории: ${totalCalories.toFixed(2)}`;
+        }
+
+        calculateButton.addEventListener('click', calculateCalories);
+    </script>
+</body>
+</html>
