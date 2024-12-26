@@ -6,8 +6,8 @@
 -Лабораторная 3 ([code](https://github.com/Kemegggg/New-Web/blob/main/lab3_ppv.js))
 
 -Лабораторная 4 ([code](https://github.com/Kemegggg/New-Web/blob/main/lab3_ppv.js))
-  1. ([code](https://github.com/Kemegggg/New-Web/blob/main/lab3_ppv.js](https://github.com/Kemegggg/New-Web/blob/main/lab4_1html.html)))
-  2. ([code](https://github.com/Kemegggg/New-Web/blob/main/lab3_ppv.js](https://github.com/Kemegggg/New-Web/blob/main/lab4_2html.html)))
+  1. ([code](lab4_2html.html))
+  2. ([code](lab4_2html.html))
   3. ([code](https://github.com/Kemegggg/New-Web/blob/main/lab3_ppv.js))
 # WEB Работы:
 -Лабораторная 1 
